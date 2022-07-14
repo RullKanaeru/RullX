@@ -9,16 +9,16 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 *${htki} PLAY ${htka}*
 
 ${htjava} *Title:* ${title}
-📤 *Published:* ${publishedTime}
-⏰ *Duration:* ${durationH}
-👁️ *Views:* ${viewH}
+📤 *𝙋𝙪𝙗𝙡𝙞𝙠𝙖𝙨𝙞:* ${publishedTime}
+⏰ *𝘿𝙪𝙧𝙖𝙨𝙞:* ${durationH}
+👁️ *𝙋𝙚𝙣𝙤𝙣𝙩𝙤𝙣:* ${viewH}
 
-🔗 *Url:* ${url}
-📔 *Description:* ${description}
-  `.trim(), wm, thumbnail, url, '📣 GO TO YOUTUBE', null, null, [
-    ['🎶 Audio', `${usedPrefix}yta ${url} yes`],
-    ['🎥 Video', `${usedPrefix}ytv ${url} yes`],
-    ['🔎 Youtube Search', `${usedPrefix}yts ${url}`]
+🔗 *𝙐𝙧𝙡/𝙇𝙞𝙣𝙠:* ${url}
+📔 *𝘿𝙚𝙨𝙠𝙧𝙞𝙥𝙨𝙞:* ${description}
+  `.trim(), wm, thumbnail, url, '𝙆𝙚 𝙔𝙤𝙪𝙩𝙪𝙗𝙚', null, null, [
+    ['𝘼𝙪𝙙𝙞𝙤', `${usedPrefix}yta ${url} yes`],
+    ['𝙑𝙞𝙙𝙚𝙤', `${usedPrefix}ytv ${url} yes`],
+    ['𝘾𝙖𝙧𝙞 𝙙𝙞 𝙮𝙤𝙪𝙩𝙪𝙗𝙚', `${usedPrefix}yts ${url}`]
   ], m)
 }
 handler.help = ['play', 'play2'].map(v => v + ' <pencarian>')
@@ -27,7 +27,6 @@ handler.command = /^play2?$/i
 
 handler.exp = 0
 handler.limit = false
-handler.register = true
 
 export default handler
 
