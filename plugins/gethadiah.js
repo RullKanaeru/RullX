@@ -1,23 +1,23 @@
 let handler = async (m, { conn }) => {
 let info = `
-*${htki} GET HADIAH ${htka}*
+*${htki} 𝙂𝙚𝙩 𝙃𝙖𝙙𝙞𝙖𝙝 ${htka}*
 `
 const sections = [
    {
-	title: `✃ CLAIM`,
+	title: `✃ 𝗖𝗟𝗔𝗜𝗠 𝗥𝗘𝗪𝗔𝗥𝗗`,
 	rows: [
-	    {title: "🌸Daily", rowId: '.daily', description: 'Hadiah per hari' },
-	    {title: "🌸Weekly", rowId: '.weekly', description: 'Hadiah per minggu' },
-	{title: "🌸Monthly", rowId: '.monthly', description: 'Hadiah per bulan' },
-	{title: "🌸Special", rowId: '.special', description: 'Hadiah special' },
+	    {title: "🌸𝗗𝗮𝗶𝗹𝘆 𝗥𝗲𝘄𝗮𝗿𝗱", rowId: '.daily', description: 'Hadiah per hari' },
+	    {title: "🌸𝗪𝗲𝗲𝗸𝗹𝘆 𝗥𝗲𝘄𝗮𝗿𝗱", rowId: '.weekly', description: 'Hadiah per minggu' },
+	{title: "🌸𝗠𝗼𝗻𝘁𝗵𝗹𝘆 𝗥𝗲𝘄𝗮𝗿𝗱", rowId: '.monthly', description: 'Hadiah per bulan' },
+	{title: "🌸𝗦𝗽𝗲𝗰𝗶𝗮𝗹 𝗥𝗲𝘄𝗮𝗿𝗱", rowId: '.special', description: 'Hadiah special' },
 	]
     }, {
-    title: `✃ INFO`,
+    title: `✃ 𝗜𝗡𝗚𝗣𝗢`,
 	rows: [
-	    {title: "💻INFO BOT", rowId: '.info', description: 'Info Fangz BOT' },
-	    {title: "🗃️MENU", rowId: '.menu', description: 'Back to menu' },
-	{title: "👤OWNER", rowId: '.owner', description: 'Owner Fangz BOT' },
-	{title: "💰SEWA BOT", rowId: '.sewa', description: 'Sewa Fangz BOT' },
+	    {title: "𝗜𝗻𝗳𝗼 𝗕𝗼𝘁", rowId: '.info', description: '𝙄𝙣𝙛𝙤 𝘽𝙤𝙩' },
+	    {title: "𝗠𝗲𝗻𝘂", rowId: '.menu', description: '𝙆𝙚𝙢𝙗𝙖𝙡𝙞 𝙆𝙚 𝙈𝙚𝙣𝙪' },
+	{title: "𝗢𝘄𝗻𝗲𝗿", rowId: '.owner', description: '𝙋𝙚𝙢𝙞𝙡𝙞𝙠 𝘽𝙤𝙩' },
+	{title: "𝗦𝗽𝗲𝗲𝗱 𝗕𝗼𝘁", rowId: '.speed', description: '𝙆𝙚𝙘𝙚𝙥𝙖𝙩𝙖𝙣 𝘽𝙤𝙩' },
 	]
     },
 ]
