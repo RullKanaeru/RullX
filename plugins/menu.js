@@ -298,7 +298,7 @@ let tek = `*✧${ucapan()} ${conn.getName(m.sender)}*
 ${clockStringP(usrs.premiumTime - new Date())}` : ''}
 
 
-               「 *Fangz BOT あ⁩* 」
+               「 *𝙵𝙰𝙽𝚃𝙰𝚂𝚈 𝙱𝙾𝚃 あ⁩* 」
 `
 const listMessage = {
   text: tek,
@@ -510,12 +510,12 @@ const listMessage = {
             fileLength: fsizedoc,
             pageCount: fpagedoc,
             caption: text,
-            footer: titlebot + '\n⚡ Supported By Fangz TEAM',
+            footer: titlebot + '\n⚡ Supported By Rull TEAM',
             templateButtons: [
                 {
                     urlButton: {
                         displayText: `${namebot}`,
-                        url: 'https://s.id/Fangzganz'
+                        url: 'https://tinyurl.com/258rslbq'
                     }
                 },
                 {
