@@ -4,8 +4,8 @@ let text = `${htki} *ADA APA* ${htka}
         💬 Ada bantuan Bot?
 `
 const templateButtons = [
-    {index: 1, urlButton: {displayText: 'Chat', url: 'https://wa.me/62895394988123'}},
-    {index: 2, quickReplyButton: {displayText: 'RATE BOT', id: '.rate'}},
+    {index: 1, urlButton: {displayText: 'ᴏᴡɴᴇʀ ʙᴏᴛ', url: 'https://wa.me/6285785845416'}},
+    {index: 2, quickReplyButton: {displayText: 'ʀᴀᴛᴇ ʙᴏᴛ', id: '.rate'}},
 ]
 let tm = {
 text: text,
