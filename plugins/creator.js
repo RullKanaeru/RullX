@@ -10,8 +10,7 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 • @${nomorown.split`@`[0]} •
 ------- ${nameown} -------
 
-📮 *Note:*
-• Owner tidak menerima save contact
+📮 *𝑵𝒐𝒕𝒆:*
 • Owner berhak blockir tanpa alasan
 • Berbicaralah yang sopan & tidak spam
 • Owner Hanya merespon yang berkaitan dengan BOT
@@ -21,54 +20,33 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 //------------ BIO
 let ppown = await conn.profilePictureUrl(nomorown + '@s.whatsapp.net', 'image').catch(_ => hwaifu[1]) 
 let teksbio = `${htki} *BIODATA* ${htka}
-*💌 Nama* : Fangz
-*✉️ Nama RL* : FangzBOT
-*♂️ Gender* : Laki - laki
-*🕋 Agama* : Islam
-*⏰ Tanggal lahir* : 25 oktober 2007
-*🎨 Umur* : 15
-*🧮 Kelas* : 9
-*🧩 Hobby* : Nonton henta*, main game, Recode script
-*💬 Sifat* : Baik, hode, softboy, tydack ramah, g*y
-*🗺️ Tinggal* : Indonesia, jawa, bogor
-*❤️ Suka* : warnah pink & hitam, trap, waifu wangy, kucing
-*💔 Benci* : anak alay, autis, anak epep, sok asik
-
-*- - sᴋɪʟʟs: - -* 
-> JavaScript [70.7%]
-> Python [11.4%]
-> CSS [4.1%]
-> Html [0.9%]
-> Recode [76.8%]
-> Create Webs [88.9%]
-
-───────[ SOSIAL MEDIA ]───────
-
-📷 *Instagram:* ${sig}
-🐈 *Github:* ${sgh}
-🥏 *Whatsapp* wa.me/${nomorown}
-🌐 *Discord:* Soon
-🌏 *Website:* https://fangzbot.websites.co.in/
-🎶 *Tiktok:* tiktok.com/@fangzjb
+*💌 Nama* : 𝑹𝒖𝒍𝒍𝑷𝒊𝒏𝒈𝒖𝒊𝒏
+*✉️ Nama RL* : 𝑹𝒖𝒍𝒍
+*♂️ Gender* : 𝑳𝒂𝒌𝒊 𝑳𝒂𝒌𝒊
+*🕋 Agama* : 𝑷𝒓𝒊𝒗𝒂𝒕𝒆
+*⏰ Tanggal lahir* : 𝑷𝒓𝒊𝒗𝒂𝒕𝒆
+*🎨 Umur* : 𝑷𝒓𝒊𝒗𝒂𝒕𝒆
+*🧮 Kelas* : 𝑷𝒓𝒊𝒗𝒂𝒕𝒆
+*🧩 Hobby* : 𝑷𝒓𝒊𝒗𝒂𝒕𝒆
+*💬 Sifat* : 𝑮𝒂𝒕𝒂𝒖
+*🗺️ Tinggal* : 𝑰𝒔𝒆𝒌𝒂𝒊
+*❤️ Suka* : 𝑮𝒂𝒕𝒂𝒖
+*💔 Benci* : 𝑮𝒂𝒕𝒂𝒖
 
 `
   let teks = ' '
 const sections = [
    {
-	title: `${htjava} OWNER –––––––––·•`,
+	title: `${htjava} 𝐎𝐰𝐧𝐞𝐫 𝐁𝐨𝐭 –––––––––·•`,
 	rows: [
-	    {title: "📱 • Nomor", rowId: ".owner nomor"},
-	{title: "🎨 • Biodata", rowId: ".owner bio"},
-	{title: "🌐 • Website", rowId: ".website"},
-	{title: "🌎 • Script", rowId: ".sc"},
-	{title: "🏮 • Youtube", rowId: ".fyt"},
+	    {title: "📱 • 𝑁𝑂𝑀𝑂𝑅", rowId: ".owner nomor"},
+	{title: "🎨 • 𝐵𝐼𝑂𝐷𝐴𝑇𝐴", rowId: ".owner bio"},
+	{title: "🌐 • 𝑊𝐸𝐵", rowId: ".website"},
 	]
     },{
-	title: `${htjava} SUPPORT ME –––––––·•`,
+	title: `${htjava} 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 –––––––·•`,
 	rows: [
-	    {title: "💹 • Donasi", rowId: ".donasi"},
-	{title: "🔖 • Sewa", rowId: ".sewa"},
-	{title: "🌟 • Buy Premium", rowId: ".premium"},
+	    {title: "💹 • 𝐷𝑂𝑁𝐴𝑇𝐼𝑂𝑁", rowId: ".donasi"},
 	]
   },
 ]
