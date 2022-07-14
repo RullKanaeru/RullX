@@ -3,13 +3,13 @@ let handler = async (m, { usedPrefix }) => {
     let user = global.db.data.users[m.sender]
     let timers = (cooldown - (new Date - user.lastadventure))
     if (user.health < 80) return conn.sendButton(m.chat,
-'*–––––『 LOW HEALTH 』–––––*',
+'*–––––『 ᴅᴀʀᴀʜᴍᴜ ᴋᴜʀᴀɴɢ 』–––––*',
 `ʏᴏᴜʀ ʜᴇᴀʟᴛʜ ɪs ʙᴇʟᴏᴡ 80﹗
 ᴩʟᴇᴀsᴇ ʜᴇᴀʟ ❤ ғɪʀsᴛ ᴛᴏ ᴀᴅᴠᴇɴᴛᴜʀᴇ ᴀɢᴀɪɴ.`.trim(), './media/lowhealth.jpg', [
 [`ʜᴇᴀʟ ❤`, `${usedPrefix}heal`]
 ], m, {asLocation: true})
     if (new Date - user.lastadventure <= cooldown) return conn.sendButton(m.chat, 
-'*–––––『 COOLDOWN 』–––––*',
+'*–––––『 ᴄᴏʟᴅᴏᴡɴ ᴄᴏᴍᴍᴀɴᴅ 』–––––*',
 `ʏᴏᴜ'ᴠᴇ ᴀʟʀᴇᴀᴅʏ *ᴀᴅᴠᴇɴᴛᴜʀᴇ*, ᴩʟᴇᴀsᴇ ᴡᴀɪᴛ ᴛɪʟʟ ᴄᴏᴏʟᴅᴏᴡɴ ғɪɴɪsʜ.
 
 ⏱️ ${timers.toTimeString()}`.trim(), './media/cooldown.jpg', [
@@ -30,7 +30,7 @@ let handler = async (m, { usedPrefix }) => {
         if (total) text += `\n⮕ ${global.rpg.emoticon(rewardItem)}${rewardItem}: ${total}`
     }
     conn.sendButton(m.chat, 
-    '*–––––『 ADVENTURE 』–––––*', 
+    '*–––––『 𝑨𝑫𝑽𝑬𝑵𝑻𝑼𝑹𝑬 』–––––*', 
     text.trim(), './media/adventure.jpg', [
 [`ɪɴᴠᴇɴᴛᴏʀʏ`, `${usedPrefix}inventory`],
 [`ᴅᴀɪʟʏ`, `${usedPrefix}daily`]
