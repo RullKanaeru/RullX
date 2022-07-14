@@ -5,7 +5,7 @@ let handler = async (m, { args, usedPrefix, __dirname }) => {
     let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
     let user = global.db.data.users[m.sender]
     if (user.health >= 100) return m.reply(`
-Your ❤️health is full!
+𝐷𝑎𝑟𝑎ℎ𝑚𝑢 𝑈𝑑ℎ 𝐹𝑢𝑙𝑙!
 `.trim())
     const heal = 40 + (user.cat * 4)
     let count = Math.max(1, Math.min(Number.MAX_SAFE_INTEGER, (isNumber(args[0]) && parseInt(args[0]) || Math.round((100 - user.health) / heal)))) * 1
@@ -14,7 +14,7 @@ Your ❤️health is full!
 `ʏᴏᴜ ɴᴇᴇᴅ ᴛᴏ ʙᴜʏ ${count - user.potion} ᴍᴏʀᴇ 🥤ᴩᴏᴛɪᴏɴ ᴛᴏ ʜᴇᴀʟ.
 ʏᴏᴜ'ᴠᴇ ${user.potion} 🥤ᴩᴏᴛɪᴏɴ ɪɴ ʙᴀɢ.
 –––––––––––––––––––––––––
-💁🏻‍♂ ᴛɪᴩ :
+💁🏻‍♂ 𝑇𝑖𝑝 :
 'ʙᴜʏ🥤ᴩᴏᴛɪᴏɴ' | 'ᴀsᴋ ᴛᴏ ᴀʟʟ'
 `.trim(), './media/lowpotion.jpg', [
 [`ʙᴜʏ ᴩᴏᴛɪᴏɴ`, `${usedPrefix}buy potion ${count - user.potion}`],
