@@ -4,10 +4,10 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     let res = await mediafiredl(args[0])
     let { url, url2, filename, ext, aploud, filesize, filesizeH } = res
     let caption = `
-*💌 Name:* ${filename}
-*📊 Size:* ${filesizeH}
-*🗂️ Extension:* ${ext}
-*📨 Uploaded:* ${aploud}
+*💌 𝗡𝗮𝗺𝗮:* ${filename}
+*📊 𝗨𝗸𝘂𝗿𝗮𝗻 𝗙𝗶𝗹𝗲:* ${filesizeH}
+*🗂️ 𝗘𝘅𝘁𝗲𝗻𝘀𝗶𝗼𝗻:* ${ext}
+*📨 𝗨𝗽𝗹𝗼𝗮𝗱 𝗽𝗮𝗱𝗮:* ${aploud}
 `.trim()
     m.reply(caption)
     await conn.sendFile(m.chat, url, filename, '', m, null, { mimetype: ext, asDocument: true })
