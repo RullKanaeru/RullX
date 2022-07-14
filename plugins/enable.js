@@ -29,8 +29,8 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
 const listMessage = {
   text: ' ',
   footer: botdate,
-  title: `*${htki} OPTIONS ${htka}*`,
-  buttonText: "Click Here!",
+  title: `*${htki} 𝙊𝙥𝙨𝙞 𝘽𝙤𝙩 ${htka}*`,
+  buttonText: "𝙆𝙡𝙞𝙠 𝙨𝙞𝙣𝙞!",
   sections
 }
 
@@ -225,10 +225,10 @@ const listMessage = {
       throw false
   }
   conn.sendButton(m.chat, `*${htki} OPTIONS ${htka}*
-🗂️ *Type:* ${type} 
-📊 *Status:* Succes ✅
-🎚️ *Options:* ${isEnable ? 'Enable' : 'Disable'}
-📣 *For:* ${isAll ? 'This Bot' : isUser ? '' : 'This Chats'}
+🗂️ *𝘛𝘪𝘱𝘦:* ${type} 
+📊 *𝘚𝘵𝘢𝘵𝘶𝘴:* 𝙎𝙪𝙠𝙨𝙚𝙨 ✅
+🎚️ *𝘖𝘱𝘴𝘪:* ${isEnable ? 'Enable' : 'Disable'}
+📣 *𝘜𝘯𝘵𝘶𝘬:* ${isAll ? 'This Bot' : isUser ? '' : 'This Chats'}
 `,wm, null, [[`${isEnable ? '✖️ Disable' : '✔️ Enable'}`, `${isEnable ? `.off ${type}` : `.on ${type}`}`], ['🎀 Menu', '.menu']],m)
 }
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
