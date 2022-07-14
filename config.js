@@ -45,33 +45,33 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
 /*============== SOCIAL ==============*/
 
 // kalo ga punya ketik "-" atau biarin aja biar ada creditsnya :v
-global.sig = 'https://instagram.com/fangzganz?igshid=YmMyMTA2M2Y='
-global.sgh = 'https://github.com/Fangzbotz2007'
-global.sgc = 'https://chat.whatsapp.com/HpxyS6b45SoGIKG7LHddiM'
-global.sdc = 'https://s.id/Fangzganz'
-global.snh = 'https://nhentai.net/g/365296/'
+global.sig = 'https://instagram.com/GatauKokTanyaSaiya'
+global.sgh = '-'
+global.sgc = 'https://chat.whatsapp.com/H4viD8aqyhC3PgHcwoMQ2q'
+global.sdc = 'https://tinyurl.com/258rslbq'
+global.snh = 'https://tinyurl.com/258rslbq'
 
 /*============== PAYMENT ==============*/
-global.pdana = '088215689772'
-global.povo = '088215689772'
-global.pgopay = '088215689772'
-global.ppulsa = '088215689772'
-global.ppulsa2 = '0895394988123'
-global.psaweria = 'https://saweria.co/FangzBot'
+global.pdana = '?'
+global.povo = '?'
+global.pgopay = '?'
+global.ppulsa = '?'
+global.ppulsa2 = '?'
+global.psaweria = '?'
 
 /*============== NOMOR ==============*/
-global.nomorbot = '62895394988123'
-global.nomorown = '6288215689772'
-global.namebot = ' 「 FANGZ BOT ⁩㊣ 」'
-global.nameown = 'Fangz Ganz'
+global.nomorbot = '6285759927794'
+global.nomorown = '6285785845416'
+global.namebot = ' 「 𝕱𝔞𝔫𝔱𝔞𝔰𝔶 𝕭𝔬𝔱 ⁩㊣ 」'
+global.nameown = '𝑹𝒖𝒍𝒍'
 
 
 /*============== STAFF ==============*/
 global.owner = [
-  ['6288215689772'],
-  ['62895336282144'],
-  ['6288215689772'],
-  ['6288215689772', 'Fangz Ganz', true]
+  ['6285785845416'],
+  ['6285785845416'],
+  ['6285785845416'],
+  ['6285785845416', '𝑹𝒖𝒍𝒍', true]
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
@@ -117,9 +117,9 @@ global.APIKeys = { // APIKey Here
 
 /*============== WATERMARK ==============*/
 //GANTI SETERAH MU
-global.wm = '                「 Fangz BOT あ⁩ 」' //Main Watermark
-global.wm2 = '¸„٭⊹•~⍣°”ˆ˜¨ FangzBOT-Md¨˜ˆ”°⍣~•⊹٭„¸'
-global.wm3 = '⫹⫺ Fangz 𝗕𝗢𝗧'
+global.wm = '                「 ℱ𝒶𝓃𝓉𝒶𝓈𝓎ℬℴ𝓉 あ⁩ 」' //Main Watermark
+global.wm2 = '¸„٭⊹•~⍣°”ˆ˜¨ 𝐹𝑎𝑛𝑡𝑎𝑠𝑦 𝐵𝑜𝑡 ¨˜ˆ”°⍣~•⊹٭„¸'
+global.wm3 = '⫹⫺  𝓕𝓪𝓷𝓽𝓪𝓼𝔂𝓑𝓸𝓽'
 global.botdate = `⫹⫺ 𝗗𝗮𝘁𝗲: ${week} ${date}`
 global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${wktuwib}`
 global.titlebot = '𝗥𝗣𝗚 | Whatsapp ʙᴏᴛ By FANGZ'
@@ -177,7 +177,7 @@ global.hsquere = ['⛶','❏','⫹⫺']
 
 /*============== STICKER WM ==============*/
 global.stickpack = '.'
-global.stickauth = `By Fangz BOT\nwa.me/${global.nomorbot}`
+global.stickauth = `𝓑𝔂 𝓕𝓪𝓷𝓽𝓪𝓼𝔂𝓑𝓸𝓽\nwa.me/${global.nomorbot}`
 
 global.multiplier = 38 // The higher, The harder levelup
 
