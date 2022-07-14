@@ -12,40 +12,40 @@ import fetch from 'node-fetch'
 const defaultMenu = {
   before: `
 %dash
-%m1 *U S E R*
-%m2 *Name:* %name
-%m2 *Tag:* %tag
-%m2 *Status:* %prems
-%m2 *Limit:* %limit
-%m2 *Money:* %money
-%m2 *Role:* %role
-%m2 *Level:* %level [ %xp4levelup Xp For Levelup]
-%m2 *Xp:* %exp / %maxexp
-%m2 *Total Xp:* %totalexp
+%m1 *𝙐𝙨𝙚𝙧 𝘽𝙤𝙩*
+%m2 *𝘕𝘢𝘮𝘢:* %name
+%m2 *𝘛𝘢𝘨:* %tag
+%m2 *𝘚𝘵𝘢𝘵𝘶𝘴:* %prems
+%m2 *𝘓𝘪𝘮𝘪𝘵:* %limit
+%m2 *𝘜𝘢𝘯𝘨:* %money
+%m2 *𝘙𝘰𝘭𝘦/𝘙𝘢𝘯𝘬:* %role
+%m2 *𝘓𝘦𝘷𝘦𝘭:* %level [ %xp4levelup Xp For Levelup]
+%m2 *𝘟𝘱:* %exp / %maxexp
+%m2 *𝘛𝘰𝘵𝘢𝘭 𝘟𝘱:* %totalexp
 %m3
 
-%m1 *T O D A Y*
+%m1 *𝙃𝙖𝙧𝙞 𝙄𝙣𝙞*
 %m2 *%ucpn*
-%m2 *Days:* %week %weton
-%m2 *Date:* %date
-%m2 *Islamic Date:* %dateIslamic
-%m2 *Time:* %wib
+%m2 *𝙃𝙖𝙧𝙞:* %week %weton
+%m2 *𝗧𝗮𝗴𝗴𝗮𝗹:* %date
+%m2 *𝗧𝗮𝗴𝗴𝗮𝗹 𝗜𝘀𝗹𝗮𝗺:* %dateIslamic
+%m2 *𝗪𝗮𝗸𝘁𝘂:* %wib
 %m3
 
-%m1 *I N F O*
-%m2 *Bot Name:* %me
-%m2 *Mode:* %mode
-%m2 *Platform:* %platform
-%m2 *Type:* Node.Js
-%m2 *Baileys:* Multi Device
-%m2 *Prefix:* [ *%_p* ]
-%m2 *Uptime:* %muptime
-%m2 *Database:* %rtotalreg dari %totalreg
+%m1 *𝗜𝗻𝗳𝗼𝗼*
+%m2 *𝗡𝗮𝗺𝗮 𝗕𝗼𝘁:* %me
+%m2 *𝗠𝗼𝗱𝘄:* %mode
+%m2 *𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺:* %platform
+%m2 *𝗧𝗶𝗽𝗲:* Node.Js
+%m2 *𝗕𝗮𝗶𝗹𝗲𝗿𝘆𝘀:* Multi Device
+%m2 *𝗣𝗿𝗲𝗳𝗶𝘅:* [ *%_p* ]
+%m2 *𝗨𝗽𝘁𝗶𝗺𝗲:* %muptime
+%m2 *𝗗𝗮𝘁𝗮𝗯𝗮𝘀𝗲:* %rtotalreg dari %totalreg
 %m3
 
-%m1 *I N F O  C M D* 
-%m4 *Ⓟ* = Premium
-%m4 *Ⓛ* = Limit
+%m1 *𝗜𝗻𝗳𝗼 𝗖𝗼𝗺𝗺𝗮𝗻𝗱* 
+%m4 *Ⓟ* = 𝗞𝗵𝘂𝘀𝘂𝘀 𝗣𝗿𝗲𝗺𝗶𝘂𝗺
+%m4 *Ⓛ* = 𝗠𝗲𝗺𝗮𝗸𝗮𝗶 𝗟𝗶𝗺𝗶𝘁
 %m3
 %readmore
 `.trimStart(),
@@ -224,16 +224,15 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
    {
 	title: `${htki} MAIN ${htka}`,
 	rows: [
-	    {title: `📛 ${pmenus} INFO BOT`, rowId: ".info", description: "Menampilkan kecepatan respon Fangz BOT"},
-	    {title: `💌 ${pmenus} OWNER BOT`, rowId: ".owner", description: "Menampilkan List owner Fangz BOT"},
+	    {title: `📛 ${pmenus} INFO BOT`, rowId: ".info", description: "Menampilkan kecepatan respon Fantasy BOT"},
+	    {title: `💌 ${pmenus} OWNER BOT`, rowId: ".owner", description: "Menampilkan List owner Fantasy BOT"},
 	    {title: `📔 ${pmenus} SCRIPT BOT`, rowId: ".sc", description: `Source Code ${namebot}`},
 	{title: `📮 ${pmenus} RULES BOT`, rowId: ".rules", description: `Peraturan menggunakan ${namebot}`},
-	{title: `🗣️ ${pmenus} REQUEST FITUR`, rowId: ".request", description: "Request fitur Fangz BOT"},
 	]
     },{
 	title: `${htki} SUPPORT ${htka}`,
 	rows: [
-	    {title: `🔖 ${pmenus} SEWA`, rowId: ".sewa", description: "Menampilkan list harga sewa BOT"},
+	    {title: `🔖 ${pmenus} SEWA`, rowId: ".sewa", description: "Menampilkan list harga sewa Bot"},
 	    {title: `🌟 ${pmenus} BUY PREMIUM`, rowId: ".premium", description: "Menampilkan list harga upgrade premium"},
 	    {title: `💰 ${pmenus} DONASI`, rowId: ".donasi", description: 'Support BOT agar on 1 Minggu non stop'},
 	{title: `✨ ${pmenus} RATE`, rowId: ".rate", description: 'Support BOT agar Semangat update'},
@@ -245,23 +244,23 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
 	    {title: `『💬』 ${pmenus} All`, rowId: ".? all", description: "Menampilkan Semua command BOT"},
 	    {title: `『🌱』 ${pmenus} Rpg`, rowId: ".? rpg", description: "Game Epic Rpg!"},
 	{title: `『✨』 ${pmenus} Exp`, rowId: ".? xp", description: "Ayo tingkatkan pangkat mu!"},
-	{title: `『🎮』 ${pmenus} Game`, rowId: ".? game", description: "Gamenya seru seru lho >-<"},
+	{title: `『🎮』 ${pmenus} Game`, rowId: ".? game", description: "Game Bot"},
 	{title: `『🧩』 ${pmenus} Fun`, rowId: ".? fun", description: "Fitur yang aman untuk keluarga"},
 	{title: `『🐚』 ${pmenus} Kerang`, rowId: ".? kerangajaib", description: "Tanyakan pada ketua club"},
 	{title: `『📑』 ${pmenus} Quotes`, rowId: ".? quotes", description: "Random Inspirasi"},
-	{title: `『⛩️』 ${pmenus} Anime`, rowId: ".? anime", description: "Kamu wibu ya bang?"},
-	{title: `『🔞』 ${pmenus} Nsfw`, rowId: ".? nsfw", description: "Tch, dasar sagne"},
+	{title: `『⛩️』 ${pmenus} Anime`, rowId: ".? anime", description: "Anime Menu"},
+	{title: `『🔞』 ${pmenus} Nsfw`, rowId: ".? nsfw", description: "Nsfw"},
 	{title: `『🌟』 ${pmenus} Premium`, rowId: ".? premium", description: "Only premium Users"},
 	{title: `『🎭』 ${pmenus} Anonymous Chats`, rowId: ".? anonymous", description: "Bicara dengan orang tidak dikenal"},
-	{title: `『📖』 ${pmenus} Al-Quran`, rowId: ".? quran", description: "Tobat yuk kak"},
+	{title: `『📖』 ${pmenus} Al-Quran`, rowId: ".? quran", description: "Islamic Menu"},
 	{title: `『🌐』 ${pmenus} Internet`, rowId: ".? internet", description: "Cari sesuatu diBOT"},
-	{title: `『📩』 ${pmenus} Downloaders`, rowId: ".? downloader", description: "Download sesuatu diBOT"},
-	{title: `『🎨』 ${pmenus} Stikers`, rowId: ".? stiker", description: "Buat Sticker diBOT"},
-	{title: `『✏️』 ${pmenus} Nulis`, rowId: ".? nulis", description: "Nulis kok males kak?"},
+	{title: `『📩』 ${pmenus} Downloaders`, rowId: ".? downloader", description: "Download sesuatu di BOT"},
+	{title: `『🎨』 ${pmenus} Stikers`, rowId: ".? stiker", description: "Buat Sticker di BOT"},
+	{title: `『✏️』 ${pmenus} Nulis`, rowId: ".? nulis", description: "Nulis Menu"},
 	{title: `『🎧』 ${pmenus} Audio`, rowId: ".? audio", description: "Ubah Audio dengan Filter"},
 	{title: `『🏢』 ${pmenus} Group`, rowId: ".? group", description: "Only Groups"},
 	{title: `『👑』 ${pmenus} Admin`, rowId: ".? admin", description: "Only Admin Group"},
-	{title: `『🗂️』 ${pmenus} Database`, rowId: ".? database", description: "Simpan sesuatu diBOT"},
+	{title: `『🗂️』 ${pmenus} Database`, rowId: ".? database", description: "Simpan sesuatu di BOT"},
 	{title: `『🛠️』 ${pmenus} Tools`, rowId: ".? tools", description: "Mungkin tools ini bisa membantu?"},
 	{title: `『ℹ️』 ${pmenus} Info`, rowId: ".? info", description: "Info info BOT"},
 	{title: `『👩‍💻』 ${pmenus} Owner`, rowId: ".? owner", description: "Owner Only!"},
@@ -276,21 +275,21 @@ let tek = `*✧${ucapan()} ${conn.getName(m.sender)}*
 
 ────━⃝┅ *D A S H B O A R D* ┅⃝━────
 
-「 *I N F O  C M D* 」
-*Ⓟ* = Premium
-*Ⓛ* = Limit
+「 *𝙄𝙣𝙛𝙤 𝘾𝙤𝙢𝙢𝙖𝙣𝙨* 」
+*Ⓟ* = 𝙆𝙝𝙪𝙨𝙪𝙨 𝙋𝙧𝙚𝙢𝙞𝙪𝙢
+*Ⓛ* = 𝙈𝙚𝙣𝙜𝙜𝙪𝙣𝙖𝙠𝙖𝙣 𝙇𝙞𝙢𝙞𝙩
 
-         「 *Ʋser Ɩnfσrmαtισn* 」
-🌸• *ɴᴀᴍᴇ:* ${usrs.registered ? usrs.name : conn.getName(m.sender)}
+         「 *𝐼𝑛𝑓𝑜 𝑈𝑠𝑒𝑟 𝐹𝑎𝑛𝑡𝑎𝑠𝑦𝐵𝑜𝑡* 」
+🌸• *ɴᴀᴍᴀ:* ${usrs.registered ? usrs.name : conn.getName(m.sender)}
 🌸• *ᴛᴀɢs:* @${m.sender.split`@`[0]}
 🌸• *sᴛᴀᴛᴜs:* ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
 🌸• *ᴘʀᴇᴍɪᴜᴍ:* ${usrs.premiumTime > 1 ? 'Yes': 'No'}
 
 
 
-         「 *Bσt Ɩnfσrmαtισn* 」
+         「 *𝐼𝑛𝑓𝑜𝑟𝑚𝑎𝑠𝑖 𝐵𝑜𝑡* 」
 🎐• *ᴜᴘᴛɪᴍᴇ:* ${mpt}
-🎐• *ᴛɪᴍᴇ:* ${moment.tz('Asia/Jakarta').format('HH')} H  ${moment.tz('Asia/Jakarta').format('mm')} M  ${moment.tz('Asia/Jakarta').format('ss')} S
+🎐• *ᴡᴀᴋᴛᴜ:* ${moment.tz('Asia/Jakarta').format('HH')} H  ${moment.tz('Asia/Jakarta').format('mm')} M  ${moment.tz('Asia/Jakarta').format('ss')} S
 🎐• *ᴜsᴇʀs:* ${Object.keys(global.db.data.users).length}
 🎐• *ʟɪᴍɪᴛ:* ${usrs.limit}
 🎐• *ʟᴇᴠᴇʟ:* ${usrs.level}
