@@ -1,8 +1,8 @@
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
-let text = `*${htki} SOURCE CODE ${htka}*
+let text = `*${htki} 𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞 𝐁𝐨𝐭 ${htka}*
 `
 const templateButtons = [
-    {index: 1, urlButton: {displayText: 'Link', url: 'https://youtube.com/channel/UCACHvReRmw2fxgMutPFCBWg'}},
+    {index: 1, urlButton: {displayText: 'Link', url: 'https://youtube.com/channel/UCY0FBGErW6JZJtIHyfAXERQ'}},
 ]
 let tm = {
 text: text,
