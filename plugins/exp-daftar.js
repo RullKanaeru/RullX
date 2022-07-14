@@ -9,13 +9,13 @@ let handler = async function (m, { text, usedPrefix, command }) {
 	let namae = conn.getName(m.sender)
 	const sections = [
 	{
-	title: "Select Your Age Here !",
+	title: "𝗣𝗶𝗹𝗶𝗵 𝗨𝗺𝘂𝗿 !",
 	rows: [
-	    {title: "Random Years", rowId: '.daftar ' + namae + '.' + pickRandom(['30','29','28','27','26','25','24','23','22','21','20','19','18','17','16','15','14','13','12','11','10','9'])}
+	    {title: "𝘜𝘮𝘶𝘳 𝘙𝘢𝘯𝘥𝘰𝘮", rowId: '.daftar ' + namae + '.' + pickRandom(['30','29','28','27','26','25','24','23','22','21','20','19','18','17','16','15','14','13','12','11','10','9'])}
 	]
     },
     {
-	title: "O L D",
+	title: "𝘛 𝘜 𝘈",
 	rows: [
 	    {title: "30 Years", rowId: '.daftar ' + namae + '.30 '},
 	    {title: "29 Years", rowId: '.daftar ' + namae + '.29 '},
@@ -30,7 +30,7 @@ let handler = async function (m, { text, usedPrefix, command }) {
 	]
     },
     {
-	title: "Y O U N G",
+	title: "𝘔 𝘜 𝘋 𝘈",
 	rows: [
 	    {title: "20 Years", rowId: '.daftar ' + namae + '.20 '},
 	    {title: "19 Years", rowId: '.daftar ' + namae + '.19 '},
@@ -49,10 +49,10 @@ let handler = async function (m, { text, usedPrefix, command }) {
 ]
 
 const listMessage = {
-  text: `│›Please select your age at the bottom button...`,
-  footer: `┗ *ʏᴏᴜʀ ɴᴀᴍᴇ:* ${conn.getName(m.sender)}\n<❔> Want a costume name? type *${usedPrefix + command} yourname.age*`,
-  title: "▢- - - - - ʀᴇɢɪsᴛᴇʀ - - - - -",
-  buttonText: "Click Here !",
+  text: `│›𝘚𝘪𝘩𝘭𝘢𝘬𝘢𝘯 𝘱𝘪𝘭𝘪𝘩 𝘶𝘮𝘶𝘳 𝘥𝘪 𝘵𝘰𝘮𝘣𝘰𝘭 𝘣𝘦𝘳𝘪𝘬𝘶𝘵...`,
+  footer: `┗ *ɴᴀᴍᴀ ᴋᴀᴍᴜ:* ${conn.getName(m.sender)}\n<❔> 𝘔𝘢𝘶 𝘬𝘶𝘵𝘰𝘮𝘪𝘴𝘢𝘴𝘪 𝘯𝘢𝘮𝘢? 𝘒𝘦𝘵𝘪𝘬 *${usedPrefix + command} 𝘯𝘢𝘮𝘢.𝘶𝘮𝘶𝘳*`,
+  title: "▢- - - - - ᴍᴇɴᴅᴀғᴛᴀʀ - - - - -",
+  buttonText: "𝙆𝙡𝙞𝙠 𝙙𝙞𝙨𝙞𝙣𝙞 𝙮𝙖𝙖 !",
   sections
 }
 
@@ -60,11 +60,11 @@ const listMessage = {
   if (user.registered === true) throw `[💬] Kamu sudah terdaftar\nMau daftar ulang? *${usedPrefix}unreg <SERIAL NUMBER>*`
   if (!Reg.test(text)) return conn.sendMessage(m.chat, listMessage, { quoted: m })
   let [_, name, splitter, age] = text.match(Reg)
-  if (!name) throw 'Nama tidak boleh kosong (Alphanumeric)'
-  if (!age) throw 'Umur tidak boleh kosong (Angka)'
+  if (!name) throw 'ɴᴀᴍᴀ ɢᴀʙᴏʟᴇʜ ᴋᴏsᴏɴɢ (Alphanumeric)'
+  if (!age) throw 'ᴜᴍᴜʀ ɢᴀʙᴏʟᴇʜ ᴋᴏsᴏɴɢ (Angka)'
   age = parseInt(age)
-  if (age > 30) throw 'WOI TUA (。-`ω´-)'
-  if (age < 5) throw 'Halah dasar bocil'
+  if (age > 30) throw '𝑈𝑚𝑢𝑟 𝑇𝑒𝑟𝑙𝑎𝑙𝑢 𝑇𝑢𝑎 (。-`ω´-)'
+  if (age < 5) throw '𝑇𝑒𝑟𝑙𝑎𝑙𝑢 𝑏𝑜𝑐𝑖𝑙'
   user.name = name.trim()
   user.age = age
   user.regTime = + new Date
@@ -72,19 +72,18 @@ const listMessage = {
   let sn = createHash('md5').update(m.sender).digest('hex')
   let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : m.fromMe ? conn.user.jid : m.sender
   let cap = `
-┏─• *ᴜsᴇʀs*
-│▸ *sᴛᴀᴛᴜs:* ☑️ sᴜᴄᴄᴇssғᴜʟ
-│▸ *ɴᴀᴍᴇ:* ${name}
-│▸ *ᴀɢᴇ:* ${age} ʏᴇᴀʀs
+┏─• *ᴜsᴇʀ ʙᴏᴛ*
+│▸ *sᴛᴀᴛᴜs:* 𝑆𝑢𝑘𝑠𝑒𝑠𝑠
+│▸ *ɴᴀᴍᴀ:* ${name}
+│▸ *ᴜᴍᴜʀ ᴀɴᴅᴀ:* ${age} ʏᴇᴀʀs
 │▸ *sɴ:* ${sn}
 ┗────···
 
-ᴅᴀᴛᴀ ᴜsᴇʀ ʏᴀɴɢ ᴛᴇʀsɪᴍᴘᴀɴ ᴅɪᴅᴀᴛᴀʙᴀsᴇ ʙᴏᴛ, ᴅɪᴊᴀᴍɪɴ ᴀᴍᴀɴ ᴛᴀɴᴘᴀ ᴛᴇʀsʜᴀʀᴇ (. ❛ ᴗ ❛.)
 `
   let buttonMessage= {
 'document':{'url':sgc},
 'mimetype':global.ddocx,
-'fileName':'- - - - - ʀᴇɢɪsᴛᴇʀ - - - - -',
+'fileName':'- - - - - 𝑴𝑬𝑵𝑫𝑨𝑭𝑻𝑨𝑹 - - - - -',
 'fileLength':fsizedoc,
 'pageCount':fpagedoc,
 'contextInfo':{
